@@ -14,7 +14,8 @@ class PureReactClass extends React.PureComponent {
     return (
       <>
         <span>This is PureReactClass component {this.state.counter}</span><br/>
-        <button onClick={() => this.setState({counter:this.state.counter + 1}) }>Click Me!</button>
+        {/* callback function as an argument of setState() */}
+        <button onClick={() => this.setState({counter:this.state.counter + 1},()=>console.log("PureReactClass counter updated!")) }>Click Me!</button>
         <br />
         <br />
       </>
