@@ -11,10 +11,10 @@ const PropFunction = () => {
     setCounter(counter + 1);
   };
   return (
-    <>
+    <div className="bg-blue-200">
       <span>Counter {counter}</span><br/>
       <PropFunctionChild handleClick={handleClick} />
-    </>
+    </div>
   );
 };
 
