@@ -6,6 +6,7 @@ import PropFunction from "./PropFunction/PropFunction";
 import PropChildren from "./PropChildren/PropChildren";
 import UncontrolledComponent from "./ControlUncontrolComponent/UncontrolledComponent";
 import ControlledComponent from "./ControlUncontrolComponent/ControlledComponent";
+import ParentLSU from "./LiftingStateUp/ParentLSU";
 
 function App() {
   return (
@@ -42,10 +43,16 @@ function App() {
           </td>
         </tr>
         <tr>
-          <td className="heading bg-blue-50">Controlled Component</td>
-          <td>
+          <td className="heading bg-blue-50">Controlled - Uncontrolled Component</td>
+          <td className="bg-blue-200">
             <UncontrolledComponent />
             <ControlledComponent />
+          </td>
+        </tr>
+        <tr>
+          <td className="heading bg-blue-50">Lifting state up </td>
+          <td className="bg-blue-300">
+            <ParentLSU />
           </td>
         </tr>
       </table>
