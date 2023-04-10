@@ -1,8 +1,8 @@
 import React from "react";
 
 class PureReactClass extends React.PureComponent {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       counter: 0,
     };
